@@ -7,9 +7,10 @@ if __name__ == '__main__':
         student_marks[name] = scores
     query_name = input()
     
-    sum = 0
+    temp = 0
     for i in range(3):
-        sum = sum + student_marks[query_name][i]
+        temp = temp + student_marks[query_name][i]
     
-    #sum = student_marks[query_name][0]+student_marks[query_name][1]+student_marks[query_name][2]
-    print(format(sum/3,".2f"))
+    #temp = student_marks[query_name][0]+student_marks[query_name][1]+student_marks[query_name][2]
+    #temp = sum(student_marks[query_name])
+    print(format(temp/3,".2f"))
